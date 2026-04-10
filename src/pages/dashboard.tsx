@@ -6,8 +6,8 @@ import MapView from "../components/mapView";
 const Dashboard = () => {
   const [missing, setMissing] = useState<any[]>([]);
   const [found, setFound] = useState<any[]>([]);
-  const [search, setSearch] = useState("");
-  const [location, setLocation] = useState("");
+  // const [search, setSearch] = useState("");
+  // const [location, setLocation] = useState("");
 
   const navigate = useNavigate();
 
@@ -55,12 +55,12 @@ const Dashboard = () => {
         <input
           className="search-inp"
           placeholder="Search by name..."
-          onChange={(e) => setSearch(e.target.value)}
+          // onChange={(e) => setSearch(e.target.value)}
         />
         <input
           className="search-inp"
           placeholder="Filter by location..."
-          onChange={(e) => setLocation(e.target.value)}
+          // onChange={(e) => setLocation(e.target.value)}
         />
       </div>
 
